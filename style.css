@@ -1,0 +1,135 @@
+/*..........................
+ Google Font Poppins Link
+ ......................... */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ......................
+Common Style or Utilities
+..........................*/
+body {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+/* ..........
+Header Style
+.............*/
+.banner {
+  background-color: #000;
+  width: 1100px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 40px 40px 0 40px;
+}
+.banner:hover {
+  cursor: pointer;
+}
+.title {
+  max-width: 450px;
+}
+.title h1,
+p {
+  color: white;
+}
+.title h1 {
+  font-size: 60px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2em;
+}
+.title p {
+  margin-bottom: 50px;
+}
+.title a {
+  text-decoration: none;
+}
+
+/*.......................
+ Button Animation Style 
+ .......................*/
+
+.btn {
+  position: absolute;
+  background-color: orange;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff2b4a;
+  transition: 0.5s ease-in-out;
+}
+.banner:hover a:before {
+  left: 0;
+  z-index: -1;
+  cursor: pointer;
+}
+span {
+  color: white;
+  transition: 0.5s ease-in-out;
+  z-index: 1;
+}
+.btn:hover span {
+  color: white;
+}
+
+.fa-solid {
+  margin-left: 15px;
+}
+.player-img img {
+  width: 500px;
+}
+
+.player-container {
+  width: 1100px;
+  /* margin-top: 100px; */
+  margin: 100px 80px 100px 80px;
+}
+.side-box {
+  width: 312px;
+  height: 312px;
+  background: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+.upcomming-match {
+}
+.upcomming-match a {
+  text-decoration: none;
+}
+.side-bg-color {
+  background-color: white;
+  padding: 20px 60px;
+  margin-top: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+.side-bg-color a {
+  color: black;
+  font-size: 20px;
+}
+.side-active-color {
+  background-color: #ff2b4a;
+  padding: 20px 60px;
+  margin-top: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+.side-active-color a {
+  color: white;
+  font-size: 20px;
+}
